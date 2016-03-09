@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" ng-app="githubApiApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Github API App</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/searchController.js"></script>
+  </head>
+  <body>
+    <main>
+      <section ng-controller="searchController as searchCtrl">
+        Search Here: <span>"{{ searchCtrl.greeter }}"</span>
+      </section>
+    </main>
+  </body>
+</html>
