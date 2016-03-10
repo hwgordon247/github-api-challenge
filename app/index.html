@@ -7,7 +7,7 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/searchController.js"></script>
   </head>
-  <body ng-controller="searchController">
+  <body ng-controller="searchController as search">
         <input type="text" id="ghusername" ng-model="username" placeholder="Github username...">
         <a href="#" id="ghsubmitbtn" ng-click="getGitInfo()">Pull User Data</a>
 
@@ -15,10 +15,10 @@
         <h2>No User Info Found</h2>
       </div>
 
-      <div ng-show="loaded">
+      <div ng-show="loaded" >
 
-       <h2> {{user.name}}
-          <span class="smallname">(@<a href="{{user.html_url}}" target="_blank"> {{user.login}} </a>)</span>
+       <h2 ng-repeat="user in search.users"> {{user.login}}
+          <span class="smallname">{{ user.login || "Nope"}}<a href="{{search.user.html_url}}" target="_blank"> {{search.user.login}} </a></span>
        </h2>
       </div>
 

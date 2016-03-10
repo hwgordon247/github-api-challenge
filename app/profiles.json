@@ -1,7 +1,26 @@
 {
- "total_count": 1,
+ "total_count": 4,
  "incomplete_results": false,
- "items": [
+ "items": [    {
+      "login": "JonnyPickard",
+      "id": 16156445,
+      "avatar_url": "https://avatars.githubusercontent.com/u/16156445?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JonnyPickard",
+      "html_url": "https://github.com/JonnyPickard",
+      "followers_url": "https://api.github.com/users/JonnyPickard/followers",
+      "following_url": "https://api.github.com/users/JonnyPickard/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JonnyPickard/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JonnyPickard/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JonnyPickard/subscriptions",
+      "organizations_url": "https://api.github.com/users/JonnyPickard/orgs",
+      "repos_url": "https://api.github.com/users/JonnyPickard/repos",
+      "events_url": "https://api.github.com/users/JonnyPickard/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JonnyPickard/received_events",
+      "type": "User",
+      "site_admin": false,
+      "score": 52.39256
+    },
    {
      "login": "ZeshanRasul",
      "id": 15655338,
@@ -21,15 +40,7 @@
      "type": "User",
      "site_admin": false,
      "score": 59.79657
-   }
- ]
-}
-
-
-{
- "total_count": 1,
- "incomplete_results": false,
- "items": [
+   },
    {
      "login": "ViolaCrellin",
      "id": 15609192,
@@ -49,62 +60,25 @@
      "type": "User",
      "site_admin": false,
      "score": 60.279625
-   }
- ]
-}
-
-
-{
- "total_count": 1,
- "incomplete_results": false,
- "items": [
-   {
-     "login": "JonnyPickard",
-     "id": 16156445,
-     "avatar_url": "https://avatars.githubusercontent.com/u/16156445?v=3",
-     "gravatar_id": "",
-     "url": "https://api.github.com/users/JonnyPickard",
-     "html_url": "https://github.com/JonnyPickard",
-     "followers_url": "https://api.github.com/users/JonnyPickard/followers",
-     "following_url": "https://api.github.com/users/JonnyPickard/following{/other_user}",
-     "gists_url": "https://api.github.com/users/JonnyPickard/gists{/gist_id}",
-     "starred_url": "https://api.github.com/users/JonnyPickard/starred{/owner}{/repo}",
-     "subscriptions_url": "https://api.github.com/users/JonnyPickard/subscriptions",
-     "organizations_url": "https://api.github.com/users/JonnyPickard/orgs",
-     "repos_url": "https://api.github.com/users/JonnyPickard/repos",
-     "events_url": "https://api.github.com/users/JonnyPickard/events{/privacy}",
-     "received_events_url": "https://api.github.com/users/JonnyPickard/received_events",
-     "type": "User",
-     "site_admin": false,
-     "score": 52.39256
-   }
- ]
-}
-
-
-{
- "total_count": 1,
- "incomplete_results": false,
- "items": [
-   {
-     "login": "hwgordon247",
-     "id": 15982008,
-     "avatar_url": "https://avatars.githubusercontent.com/u/15982008?v=3",
-     "gravatar_id": "",
-     "url": "https://api.github.com/users/hwgordon247",
-     "html_url": "https://github.com/hwgordon247",
-     "followers_url": "https://api.github.com/users/hwgordon247/followers",
-     "following_url": "https://api.github.com/users/hwgordon247/following{/other_user}",
-     "gists_url": "https://api.github.com/users/hwgordon247/gists{/gist_id}",
-     "starred_url": "https://api.github.com/users/hwgordon247/starred{/owner}{/repo}",
-     "subscriptions_url": "https://api.github.com/users/hwgordon247/subscriptions",
-     "organizations_url": "https://api.github.com/users/hwgordon247/orgs",
-     "repos_url": "https://api.github.com/users/hwgordon247/repos",
-     "events_url": "https://api.github.com/users/hwgordon247/events{/privacy}",
-     "received_events_url": "https://api.github.com/users/hwgordon247/received_events",
-     "type": "User",
-     "site_admin": false,
-     "score": 59.74554
-   }
+   },
+   {    "login": "hwgordon247",
+        "id": 15982008,
+        "avatar_url": "https://avatars.githubusercontent.com/u/15982008?v=3",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hwgordon247",
+        "html_url": "https://github.com/hwgordon247",
+        "followers_url": "https://api.github.com/users/hwgordon247/followers",
+        "following_url": "https://api.github.com/users/hwgordon247/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hwgordon247/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hwgordon247/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hwgordon247/subscriptions",
+        "organizations_url": "https://api.github.com/users/hwgordon247/orgs",
+        "repos_url": "https://api.github.com/users/hwgordon247/repos",
+        "events_url": "https://api.github.com/users/hwgordon247/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hwgordon247/received_events",
+        "type": "User",
+        "site_admin": false,
+        "score": 59.74554
+      }
  ]
 }

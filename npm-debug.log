@@ -29,7 +29,7 @@
 18 verbose stack     at maybeClose (internal/child_process.js:818:16)
 18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 19 verbose pkgid basic-app@1.0.0
-20 verbose cwd /Users/Viola/Desktop/Programming/MakersAcademy/WeeklyChallenges/Week8/API-Challenge/github-api-challenge/app
+20 verbose cwd /Users/Viola/Desktop/Programming/MakersAcademy/WeeklyChallenges/Week8/API-Challenge/github-api-challenge
 21 error Darwin 15.0.0
 22 error argv "/usr/local/Cellar/node/5.1.1/bin/node" "/usr/local/bin/npm" "start"
 23 error node v5.1.1
