@@ -8,13 +8,16 @@ githubApiApp.controller("searchController", function($scope, $http){
 
     $http.get("https://api.github.com/search/users?q=" + $scope.username)
       .success(function (data) {
-        if (data.total_count > 0)
-        self.users = data.items;
-        $scope.loaded = true;
+        if (data.total_count > 0){
+          self.users = data.items;
+          $scope.loaded = true;
+        }else{
+          $scope.userNotFound = true;
+        }
       })
-      .error(function () {
-        $scope.userNotFound = true;
-      });
+      // .error(function () {
+      //   $scope.userNotFound = true;
+      // });
 
   };
 });

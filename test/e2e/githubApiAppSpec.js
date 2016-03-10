@@ -20,7 +20,14 @@ describe("Github Api application", function(){
  it("can search for a username", function(){
      var user = element(by.model('username')).sendKeys('hwgordon247');
      element(by.id('ghsubmitbtn')).click();
-     expect(element(by.id('test')).getText()).toContain('Henry Gordon');
+     expect(element(by.id('test')).getText()).toContain('hwgordon247');
+ });
+
+ it("can access more information", function(){
+     var user = element(by.model('username')).sendKeys('hwgordon247');
+     element(by.id('ghsubmitbtn')).click();
+     element(by.id('personalInfo')).click();
+     expect(element(by.id('test')).getText()).toContain('Name: Henry Gordon');
  });
 
 

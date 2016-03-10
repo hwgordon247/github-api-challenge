@@ -8,7 +8,8 @@
     <script src="js/controllers/searchController.js"></script>
     <script src="js/controllers/personalSearchController.js"></script>
   </head>
-  <body ng-controller="searchController as search">
+  <body id='test' >
+    <div ng-controller="searchController as search" >
         <input type="text" id="ghusername" ng-model="username" placeholder="Github username...">
         <a href="#" id="ghsubmitbtn" ng-click="getGitInfo()">Pull User Data</a>
 
@@ -19,14 +20,18 @@
       <div ng-show="loaded" >
 
        <h2 ng-repeat="user in search.users"> {{user.login}}
-          <section class="smallname" ng-controller="personalSearchController as personalSearch"><a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a>
+
+
+      <section class="smallname" ng-controller="personalSearchController as personalSearch"><a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a>
           <a href="#" type="submit" id="personalInfo" ng-click="getPersonalGitInfo(user.login)"> More Info </a>
+
           <div ng-show="userNotFound">
             <h2>No User Info Found</h2>
           </div>
         <div ng-show="loadedAgain">
-          {{self.specificUser.name}}
-      </div>
+          Name: {{specificUser.name}}
+        </div>
     </section>
+    </div>
   </body>
 </html>
