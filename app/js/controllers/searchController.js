@@ -1,4 +1,6 @@
 githubApiApp.controller("searchController", function($scope, $http){
+  var self = this;
+  self.users = "";
 
   $scope.getGitInfo = function() {
     $scope.userNotFound = false;
@@ -7,15 +9,13 @@ githubApiApp.controller("searchController", function($scope, $http){
     $http.get("https://api.github.com/search/users?q=" + $scope.username)
       .success(function (data) {
         if (data.total_count > 0)
-        // data.name = data.login;
-        $scope.users = data.items;
+        self.users = data.items;
         $scope.loaded = true;
       })
       .error(function () {
         $scope.userNotFound = true;
       });
 
-// data.items[1].login
 
 
   };
