@@ -4,12 +4,12 @@ describe("searchController", function(){
   beforeEach(function(){
     module("githubApiApp");
     inject(function($controller){
-      ctrl = $controller("counterController");
+      ctrl = $controller("searchController");
     });
   });
 
   it("does something", function(){
-    // expect(ctrl.count).toEqual(0);
+    expect(ctrl.count).toEqual(0);
   });
 
 });
