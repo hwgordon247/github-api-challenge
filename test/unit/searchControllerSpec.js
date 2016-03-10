@@ -8,8 +8,10 @@ describe("searchController", function(){
     });
   });
 
-  it("does something", function(){
-    // expect(ctrl.count).toEqual(0);
+  it("Pulls user info from the github api", function(){
+    expect(ctrl.count).toEqual(0);
   });
+
+  
 
 });
