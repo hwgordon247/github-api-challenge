@@ -6,6 +6,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers/searchController.js"></script>
+    <script src="js/controllers/personalSearchController.js"></script>
   </head>
   <body ng-controller="searchController as search">
         <input type="text" id="ghusername" ng-model="username" placeholder="Github username...">
@@ -18,9 +19,14 @@
       <div ng-show="loaded" >
 
        <h2 ng-repeat="user in search.users"> {{user.login}}
-          <span class="smallname"><a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a></span>
-       </h2>
+          <section class="smallname" ng-controller="personalSearchController as personalSearch"><a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a>
+          <a href="#" type="submit" id="personalInfo" ng-click="getPersonalGitInfo(user.login)"> More Info </a>
+          <div ng-show="userNotFound">
+            <h2>No User Info Found</h2>
+          </div>
+        <div ng-show="loadedAgain">
+          {{self.specificUser.name}}
       </div>
-
+    </section>
   </body>
 </html>
