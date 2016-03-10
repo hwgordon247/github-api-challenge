@@ -15,12 +15,10 @@
         <h2>No User Info Found</h2>
       </div>
 
-      <h2>{{search.users || debugger;}}</h2>
-
       <div ng-show="loaded" >
 
        <h2 ng-repeat="user in search.users"> {{user.login}}
-          <span class="smallname">{{ user.login || "Nope"}}<a href="{{search.user.html_url}}" target="_blank"> {{search.user.login}} </a></span>
+          <span class="smallname"><a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a></span>
        </h2>
       </div>
 

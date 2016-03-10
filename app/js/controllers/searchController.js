@@ -16,7 +16,5 @@ githubApiApp.controller("searchController", function($scope, $http){
         $scope.userNotFound = true;
       });
 
-
-
   };
 });
