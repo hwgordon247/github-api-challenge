@@ -15,6 +15,5 @@ githubApiApp.controller("searchController", function($scope, $http){
       });
 
 
-
   };
 });
