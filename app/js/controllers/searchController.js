@@ -1,6 +1,20 @@
-"use strict";
+githubApiApp.controller("searchController", function($scope, $http){
 
-githubApiApp.controller("searchController", function(){
+  $scope.getGitInfo = function() {
+    $scope.userNotFound = false;
+    $scope.loaded = false;
 
-  this.greeter = "Hi";
+    $http.get("https://api.github.com/users/" + $scope.username)
+      .success(function (data) {
+        if (data.name === "") data.name = data.login;
+        $scope.user = data;
+        $scope.loaded = true;
+      })
+      .error(function () {
+        $scope.userNotFound = true;
+      });
+
+
+
+  };
 });
