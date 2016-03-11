@@ -1,3 +1,23 @@
+
+div.title {
+  font-family: 'Playball';
+  font-size: 200%;
+  float: top;
+  text-align: center;
+  color: white;
+  text-shadow:
+   10px 10px rgb(255, 140, 26),
+   1px -1px rgb(255, 140, 26),
+   -1px 1px rgb(255, 140, 26),
+   1px 1px rgb(255, 140, 26);
+}
+
+div.summary_info {
+  align-items: center;
+  border: solid;
+
+}
+
 #avatard {
  border: solid;
  border-radius: 100px;
@@ -7,7 +27,8 @@
 
 #users {
  text-align: center;
- font-family: sans-serif;
+ font-size: 30%;
+ font-family: 'Gruppo';
  border: solid;
  border-radius: 20px;
  padding: 10px;
@@ -26,9 +47,47 @@
  margin-left: 35%;
  margin-right: 35%;
  padding: 5px;
+
 }
 
+body {
+  font-size: 100px;
+}
 /*#mainbody {
  background-image: url("https://octodex.github.com/images/octobiwan.jpg");
  background-size: cover;
 }*/
+
+button {
+ background-color: rgb(51, 204, 204);
+ font-size: 70%;
+ font-family: 'Gruppo';
+ border: none;
+ color: white;
+ padding: 5px 5px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ border-radius: 10px;
+}
+
+button#ghsubmitbtn {
+  align-self: center;
+  position: relative;
+  left: 37%;
+}
+
+
+#ghusername {
+  align-self: center;
+  position: relative;
+  left: 37%;
+ background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+ width: 75%;
+ max-width: 500px;
+ height: 10%;
+ max-height: 50px;
+ font-family: 'Gruppo';
+ font-size: 50%;
+ line-height: 70%;
+}
