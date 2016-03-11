@@ -1,4 +1,4 @@
-
+/*
 div.title {
   font-family: 'Playball';
   font-size: 200%;
@@ -53,10 +53,6 @@ div.summary_info {
 body {
   font-size: 100px;
 }
-/*#mainbody {
- background-image: url("https://octodex.github.com/images/octobiwan.jpg");
- background-size: cover;
-}*/
 
 button {
  background-color: rgb(51, 204, 204);
@@ -90,4 +86,4 @@ button#ghsubmitbtn {
  font-family: 'Gruppo';
  font-size: 50%;
  line-height: 70%;
-}
+}*/
