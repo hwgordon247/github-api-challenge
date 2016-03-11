@@ -69,9 +69,12 @@ div.summary_info {
  font-size: 30%;
  font-family: 'Gruppo';
  border: solid;
+ border-color: rgba(75, 56, 49, 0.3);
  border-radius: 20px;
  padding: 10px;
- background-color: rgba(255, 255, 255, 0.7);
+ background-color: rgba(255, 140, 26, 0.5);
+ margin: 30px;
+ padding: 10px;
 }
 
 
@@ -96,3 +99,9 @@ button {
  display: inline-block;
  border-radius: 10px;
 }
+
+button:focus {
+  outline-style: ridge;
+  outline:0;
+}
+#ghusername:focus {outline:0;}
