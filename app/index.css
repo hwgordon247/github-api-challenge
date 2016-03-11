@@ -1,34 +1,34 @@
-/*body {
-  height: 100%;
-  font-family:helvetica, sans-serif;
-  background-color: rgb(255, 77, 77);
-  font-size: 48px;
-  font-weight: normal;
-}*/
-
-
-label {
-  color: white;
-}
-
-.wrapper {
-  margin: 100px auto;
-}
-
-div.title {
-  text-align: center;
-  position: relative;
-  max-width: 1500px;
-  font-size-adjust: auto;
-  background-color: white;
-}
-
-div.title>h1 {
-  font-family: helvetica;
-  color: rgb(255, 77, 77);
-}
-
 #avatard {
-  width: 50px;
-
+ border: solid;
+ border-radius: 100px;
+ height: 30px;
+ width: 30px;
 }
+
+#users {
+ text-align: center;
+ font-family: sans-serif;
+ border: solid;
+ border-radius: 20px;
+ padding: 10px;
+ background-color: rgba(255, 255, 255, 0.7);
+}
+
+#username {
+ text-align: left;
+}
+
+#ghusername {
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.7);
+ border: solid;
+ border-radius: 100px;
+ margin-left: 35%;
+ margin-right: 35%;
+ padding: 5px;
+}
+
+/*#mainbody {
+ background-image: url("https://octodex.github.com/images/octobiwan.jpg");
+ background-size: cover;
+}*/
