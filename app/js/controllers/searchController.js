@@ -2,6 +2,7 @@ githubApiApp.controller("searchController", function($scope, $http){
   var self = this;
   self.users = "";
 
+
   $scope.getGitInfo = function() {
     $scope.userNotFound = false;
     $scope.loaded = false;
