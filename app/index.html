@@ -33,7 +33,9 @@
 
 
         <section class="smallname" ng-controller="personalSearchController as personalSearch">
-          <button type="submit" id="personalInfo" ng-click="getPersonalGitInfo(user.login)"> More Info </button>
+          <button type="submit" id="personalInfo" ng-click="getPersonalGitInfo(user.login)" ng-hide="loadedAgain"> More Info </button>
+          <button type="submit" id="hidePersonalInfo" ng-click="hidePersonalGitInfo(user.login)" ng-show="loadedAgain"> Hide Info </button>
+
           <a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a>
 
           <div ng-show="userNotFound" class="no_users_found">

@@ -15,7 +15,9 @@ var self = this;
       .error(function () {
         $scope.userNotFound = true;
       });
+  };
 
-
+  $scope.hidePersonalGitInfo = function(login){
+    $scope.loadedAgain = false;
   };
 });
