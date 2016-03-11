@@ -8,22 +8,28 @@
     <script src="js/controllers/searchController.js"></script>
     <script src="js/controllers/personalSearchController.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link href='https://fonts.googleapis.com/css?family=Gruppo|Poppins|Open+Sans|Jura|Audiowide|Playball' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gruppo|Poppins|Open+Sans|Jura|Audiowide|Playball|Lobster|Lobster+Two|Amaranth|Fugaz+One' rel='stylesheet' type='text/css'>
   </head>
   <body id='test' >
 
-    <div class='title'> Creepy Git </div>
+  <div class='title'> Creepy Git </div>
 
     <div ng-controller="searchController as search" class="summary_info">
+
+
+
+      <section class="search_bar">
         <input type="text" id="ghusername" ng-model="username" placeholder="Github username...">
         <button id="ghsubmitbtn" ng-click="getGitInfo()">Pull User Data</button>
+      </section>
+
       <div ng-show="userNotFound" class="no_users_found">
         <h2>No User Info Found</h2>
       </div>
-      <div ng-show="loaded" >
 
-       <h2 id='users' ng-repeat="user in search.users"> {{user.login}}
-         <img id="avatard" src="{{ user.avatar_url}}" alt="avatar">
+      <div ng-show="loaded" id='users' ng-repeat="user in search.users">
+        {{user.login}}
+        <img id="avatard" src="{{ user.avatar_url}}" alt="avatar">
 
 
         <section class="smallname" ng-controller="personalSearchController as personalSearch">
