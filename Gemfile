@@ -6,12 +6,14 @@ gem 'data_mapper'
 gem 'dm-postgres-adapter'
 gem 'rack'
 gem 'sinatra'
+gem 'rest_client'
 gem 'database_cleaner'
 gem 'pg'
 gem 'rake'
 gem 'bcrypt'
 gem 'sinatra-flash'
 gem 'sinatra-partial'
+gem 'json'
 
 
 group :test do
