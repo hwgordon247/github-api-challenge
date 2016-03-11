@@ -12,23 +12,22 @@ div.title {
    -1px 1px rgb(255, 140, 26),
    1px 1px rgb(255, 140, 26);
   background-image: url("https://octodex.github.com/images/octobiwan.jpg");
-  background-size: cover;
+  background-position: center;
 
 }
 
 section.search_bar {
-  position:fixed;
+  position: relative;
   top: 30%;
-  left: 1em;
-  z-index: 10;
-  width: 95%;
+  width: 99%;
   height: 10%;
+  padding: 5px;
   text-align: center;
   font-family: 'Gruppo';
   font-size: 50%;
+
   color: rgb(51, 204, 204);
   border-radius: 10px;
-  border-style: groove;
   border-color: rgb(255, 218, 179);
 }
 
@@ -46,12 +45,13 @@ section.search_bar {
  border: solid;
  border-color: rgb(51, 204, 204);
  border-radius: 100px;
+ padding: 10px;
 }
 
 
 div.summary_info {
-  align-items: center;
-  border: solid;
+  /*align-items: center;
+  border: solid;*/
 
 }
 
