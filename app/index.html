@@ -7,6 +7,7 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/searchController.js"></script>
     <script src="js/controllers/personalSearchController.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body id='test' >
     <div ng-controller="searchController as search" >
@@ -20,7 +21,7 @@
       <div ng-show="loaded" >
 
        <h2 ng-repeat="user in search.users"> {{user.login}}
-         <img id="avatar" src="{{ user.avatar_url}}" alt="avatar">
+         <img id="avatard" src="{{ user.avatar_url}}" alt="avatar">
 
 
       <section class="smallname" ng-controller="personalSearchController as personalSearch"><a href="{{ user.html_url}}" target="_blank">{{ user.html_url}}</a>
@@ -32,6 +33,8 @@
         <div ng-show="loadedAgain">
           Name: {{specificUser.name}}
           <img id="avatar" src="{{ specificUser.avatar_url}}" alt="avatar">
+          Repos: {{specificUser.public_repos}}
+          Followers: {{specificUser.followers}}
         </div>
     </section>
     </div>

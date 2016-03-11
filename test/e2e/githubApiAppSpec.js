@@ -30,5 +30,19 @@ describe("Github Api application", function(){
      expect(element(by.id('test')).getText()).toContain('Name: Henry Gordon');
  });
 
+ it("shows how many repos the user has", function(){
+     var user = element(by.model('username')).sendKeys('hwgordon247');
+     element(by.id('ghsubmitbtn')).click();
+     element(by.id('personalInfo')).click();
+     expect(element(by.id('test')).getText()).toContain('Repos: 27');
+ });
+
+ it("shows how many followers a user has", function(){
+     var user = element(by.model('username')).sendKeys('hwgordon247');
+     element(by.id('ghsubmitbtn')).click();
+     element(by.id('personalInfo')).click();
+     expect(element(by.id('test')).getText()).toContain('Followers: 16');
+ });
+
 
 });
